@@ -1,0 +1,32 @@
+{
+  "name": "xutl/laravel-acme",
+  "description": "This is a Laravel expansion for the Acme.",
+  "keywords": [
+    "laravel",
+    "acme"
+  ],
+  "type": "library",
+  "license": "MIT",
+  "require": {
+    "yourivw/leclient": "^1.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "XuTL\\Acme\\": "src"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0-dev"
+    },
+    "laravel": {
+      "providers": [
+        "XuTL\\Acme\\AcmeServiceProvider"
+      ],
+      "aliases": {
+        "Aliyun": "XuTL\\Acme\\Acme"
+      }
+    }
+  },
+  "prefer-stable": true
+}
